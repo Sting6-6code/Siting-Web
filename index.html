@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siting Wang - Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Siting Wang - Full Stack Developer Portfolio. Specialized in web development, automation testing, and software engineering."
+    />
+    <meta
+      name="keywords"
+      content="Siting Wang, Full Stack Developer, Web Development, React, Node.js, Portfolio"
+    />
+    <meta name="author" content="Siting Wang" />
+    <meta property="og:title" content="Siting Wang - Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio website showcasing full-stack development projects and skills."
+    />
+    <meta property="og:image" content="/assets/images/profile.jpg" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+
+    <!-- 字体 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">SW</div>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home">首页</a></li>
+          <li><a href="#about">关于</a></li>
+          <li><a href="#projects">项目</a></li>
+          <li><a href="#resume">简历</a></li>
+          <li><a href="#contact">联系</a></li>
+        </ul>
+        <button class="theme-toggle">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+          <span class="sr-only">切换深色模式</span>
+        </button>
+        <button class="lang-toggle">
+          <span class="current-lang">中</span>
+          <span class="lang-divider">/</span>
+          <span class="other-lang">EN</span>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+          <li><a href="#home">首页</a></li>
+          <li><a href="#about">关于</a></li>
+          <li><a href="#projects">项目</a></li>
+          <li><a href="#resume">简历</a></li>
+          <li><a href="#contact">联系</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 主页部分 -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="profile-image">
+          <img
+            src="/assets/images/profile.JPG"
+            alt="Siting (Cecilia) Wang"
+            sizes="(max-width: 768px) 150px,
+                   200px"
+            loading="eager"
+          />
+        </div>
+        <h1 class="title">Hi, I'm Siting Wang</h1>
+        <p class="subtitle">A passionate full-stack developer</p>
+        <div class="tech-stack">
+          <!-- 技术栈动画将在这里展示 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 关于部分 -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">关于我</h2>
+        <div class="about-content">
+          <div class="education">
+            <h3>教育背景</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <h4>Northeastern University</h4>
+                <p>M.S. in Information Systems (2026预计毕业)</p>
+              </div>
+              <div class="timeline-item">
+                <h4>Brunel University London</h4>
+                <p>B.Eng. in Communication Engineering</p>
+              </div>
+            </div>
+          </div>
+          <div class="skills">
+            <h3>技术栈</h3>
+            <div class="skill-tags">
+              <span class="skill-tag"
+                ><i class="fab fa-react"></i> React.js</span
+              >
+              <span class="skill-tag"
+                ><i class="fab fa-js"></i> JavaScript</span
+              >
+              <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+              <span class="skill-tag"><i class="fab fa-css3"></i> CSS3</span>
+              <span class="skill-tag"><i class="fab fa-node"></i> Node.js</span>
+              <span class="skill-tag"
+                ><i class="fab fa-python"></i> Python</span
+              >
+              <span class="skill-tag"
+                ><i class="fas fa-database"></i> MongoDB</span
+              >
+              <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+            </div>
+          </div>
+          <div class="interests">
+            <h3>兴趣爱好</h3>
+            <div class="interests-content">
+              <div class="interest-item">
+                <div class="interest-header">
+                  <i class="fas fa-music"></i>
+                  <h4>舞蹈</h4>
+                </div>
+                <p>热爱街舞，经常参加舞蹈表演和比赛</p>
+                <div class="dance-gallery">
+                  <div class="dance-images">
+                    <img
+                      src="/assets/images/dance-preview1.jpg"
+                      alt="舞蹈展示 1"
+                      class="active"
+                    />
+                    <img
+                      src="/assets/images/dance-preview2.jpg"
+                      alt="舞蹈展示 2"
+                    />
+                    <img
+                      src="/assets/images/dance-preview3.jpg"
+                      alt="舞蹈展示 3"
+                    />
+                  </div>
+                  <div class="gallery-nav">
+                    <button class="prev-btn">
+                      <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="gallery-dots">
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                    <button class="next-btn">
+                      <i class="fas fa-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="video-preview">
+                  <button class="video-trigger">
+                    <img
+                      src="/assets/images/dance-video-preview.png"
+                      alt="舞蹈视频预览"
+                    />
+                    <div class="play-overlay">
+                      <i class="fas fa-play"></i>
+                      <span>观看完整视频</span>
+                    </div>
+                  </button>
+                </div>
+
+                <!-- 视频模态框 -->
+                <div class="video-modal">
+                  <div class="modal-content">
+                    <button class="modal-close">
+                      <i class="fas fa-times"></i>
+                    </button>
+                    <div class="video-container">
+                      <video controls>
+                        <source
+                          src="/assets/videos/dance.mp4"
+                          type="video/mp4"
+                        />
+                        您的浏览器不支持视频播放。
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="volunteer">
+            <h3>志愿者经历</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-header">
+                  <i class="fas fa-heart"></i>
+                  <h4>社区教育志愿者</h4>
+                </div>
+                <p>为社区儿童提供免费的编程启蒙教育</p>
+                <span class="timeline-date">2023 - 至今</span>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-header">
+                  <i class="fas fa-hands-helping"></i>
+                  <h4>环保志愿者</h4>
+                </div>
+                <p>参与海滩清理和环保宣传活动</p>
+                <span class="timeline-date">2022 - 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 项目部分 -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">项目展示</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="/assets/images/projects/automation-platform.jpg"
+                alt="自动化测试平台"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Imaging Test Automation Platform</h3>
+              <p>自动化测试平台，提高40%测试效率</p>
+              <div class="project-details">
+                <ul>
+                  <li>设计并实现自动化测试流程</li>
+                  <li>集成CI/CD pipeline</li>
+                  <li>实现测试报告自动生成</li>
+                </ul>
+              </div>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank"
+                  ><i class="fab fa-github"></i> 源码</a
+                >
+                <a href="#" target="_blank"
+                  ><i class="fas fa-external-link-alt"></i> 演示</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="/assets/images/profile2.png"
+                alt="个人作品集网站"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Personal Portfolio Website</h3>
+              <p>响应式个人作品集网站</p>
+              <div class="project-details">
+                <ul>
+                  <li>支持深色模式</li>
+                  <li>中英文切换功能</li>
+                  <li>集成AI助手</li>
+                </ul>
+              </div>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Node.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 简历部分 -->
+    <section id="resume" class="section resume">
+      <div class="container">
+        <h2 class="section-title">个人简历</h2>
+        <div class="resume-content">
+          <div class="resume-download">
+            <a href="assets/resume.pdf" class="btn" target="_blank">
+              <i class="fas fa-download"></i> 下载简历
+            </a>
+          </div>
+          <div class="resume-preview">
+            <!-- 简历预览内容 -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系部分 -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">联系我</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:wang.sit@northeastern.edu"
+                >wang.sit@northeastern.edu</a
+              >
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/Sting6-6code" target="_blank"
+                >GitHub</a
+              >
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <a
+                href="https://www.linkedin.com/in/siting-wang-15904b327/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" required placeholder="您的姓名" />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  placeholder="您的邮箱"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  required
+                  placeholder="您的留言"
+                ></textarea>
+              </div>
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane"></i>
+                  <span>发送消息</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI助手 -->
+    <div class="ai-assistant">
+      <button class="ai-toggle">
+        <i class="fas fa-robot"></i>
+      </button>
+      <div class="ai-chat-window">
+        <div class="ai-chat-header">
+          <h3>AI助手</h3>
+          <button class="ai-close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="ai-chat-messages">
+          <!-- 消息将在这里动态添加 -->
+        </div>
+        <div class="ai-chat-input">
+          <input type="text" placeholder="输入您的问题..." />
+          <button class="ai-send">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 在 main.js 之前添加 api.js -->
+    <script src="scripts/api.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
